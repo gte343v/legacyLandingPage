@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette — aligned to Legacy Louisiana brand (#2a2727 ink / #2b7880 teal) */
+  --color-paper: #f7f4ef;
+  --color-paper-2: #efe9dd;
+  --color-cream: #fbf8f2;
+  --color-ink: #2a2727;
+  --color-ink-2: #2a2727;
+  --color-muted: #746f6a;
+  --color-rule: #d8d2c4;
+  --color-teal: #2b7880;
+  --color-teal-2: #4d7d7f;
+  --color-teal-soft: #dceced;
+  --color-teal-light: #8fd0d5;
+  /* Accent slots map to brand teal so any "brass" usage stays on-brand */
+  --color-brass: #2b7880;
+  --color-brass-soft: #8fd0d5;
+  --color-oxblood: #7a2f2a;
+
+  /* Typography */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, ui-serif, serif;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Easing */
+  --ease-paper: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Lenis smooth scroll */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 380;
+    letter-spacing: -0.022em;
+    font-feature-settings: "ss01", "ss02";
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .display-xl {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 7.6vw, 7.5rem);
+    line-height: 0.94;
+    letter-spacing: -0.03em;
+    font-weight: 360;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+
+  .display-lg {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5.4vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    font-weight: 380;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+
+  .display-md {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 3.6vw, 3.2rem);
+    line-height: 1.04;
+    letter-spacing: -0.022em;
+    font-weight: 400;
+    font-variation-settings: "opsz" 96, "SOFT" 30;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+  }
+
+  .eyebrow-light {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .lede {
+    font-size: clamp(1.05rem, 1.4vw, 1.18rem);
+    line-height: 1.6;
+    color: var(--color-muted);
+    max-width: 56ch;
+  }
+
+  .rule {
+    height: 1px;
+    background: var(--color-rule);
+  }
+
+  /* Paper sheet — stacking section base */
+  .paper-sheet {
+    background: var(--color-paper);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    box-shadow:
+      0 -1px 0 rgba(255, 255, 255, 0.55) inset,
+      0 -28px 60px -28px rgba(28, 26, 23, 0.35);
+    position: relative;
+  }
+
+  .paper-sheet::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.7) 50%, transparent 100%);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    pointer-events: none;
+  }
+
+  .paper-sheet--cream {
+    background: var(--color-cream);
+  }
+  .paper-sheet--paper2 {
+    background: var(--color-paper-2);
+  }
+  .paper-sheet--teal {
+    background: linear-gradient(180deg, #d4e4e5 0%, #b9d3d4 100%);
+  }
+  .paper-sheet--ink {
+    background: linear-gradient(180deg, #1c1a17 0%, #232120 100%);
+    color: #f1ecdf;
+  }
+  .paper-sheet--ink h1,
+  .paper-sheet--ink h2,
+  .paper-sheet--ink h3 {
+    color: #f1ecdf;
+  }
+
+  /* Subtle grain overlay */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    background-size: 220px 220px;
+    border-radius: inherit;
+  }
+
+  /* Marquee divider */
+  @keyframes marquee {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+  }
+  .marquee-track {
+    animation: marquee 38s linear infinite;
+    will-change: transform;
+  }
+
+  /* Hover underline */
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 380ms var(--ease-out-expo);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  /* Decorative seal ring */
+  .seal-ring {
+    background:
+      radial-gradient(circle at center, transparent 56%, rgba(184, 136, 74, 0.18) 56.5%, rgba(184, 136, 74, 0.18) 58.5%, transparent 59%),
+      radial-gradient(circle at center, transparent 62%, rgba(184, 136, 74, 0.12) 62.5%, rgba(184, 136, 74, 0.12) 63.5%, transparent 64%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
