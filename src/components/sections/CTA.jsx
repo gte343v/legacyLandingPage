@@ -12,19 +12,15 @@ export default function CTA() {
         viewport={VIEWPORT}
       >
         <div className="lg:col-span-7">
-          <motion.p variants={fadeUp} className="eyebrow-light flex items-center gap-3">
-            <span className="inline-block h-px w-10 bg-cream/30" />
-            Coda · The invitation
-          </motion.p>
-          <motion.h2 variants={fadeUp} className="display-xl mt-6 text-cream">
-            Modernise your{" "}
+          <motion.h2 variants={fadeUp} className="display-xl text-cream">
+            Modernize your{" "}
             <span className="italic text-teal-light" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
               practice.
             </span>
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-cream/70 max-w-[52ch]">
             See how Legacy Louisiana can help your firm save time, improve client experience,
-            and grow efficiently — without losing the considered touch your clients trust you for.
+            and grow efficiently.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-3">
@@ -60,12 +56,12 @@ export default function CTA() {
             </p>
             <div className="mt-6 grid gap-3 font-mono text-[0.78rem] uppercase tracking-[0.18em] text-cream/55">
               <div className="flex justify-between border-b border-cream/15 pb-3">
-                <span>Baton Rouge</span>
+                <span>Covington, LA</span>
                 <span className="text-cream/85">HQ</span>
               </div>
               <div className="flex justify-between border-b border-cream/15 pb-3">
                 <span>Hours</span>
-                <span className="text-cream/85">Mon–Fri</span>
+                <span className="text-cream/85">Mon to Fri</span>
               </div>
               <div className="flex justify-between">
                 <span>Response</span>

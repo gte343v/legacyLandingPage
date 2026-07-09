@@ -25,9 +25,9 @@ export default function Problem() {
           <motion.h2 variants={fadeUp} className="display-lg mt-6 text-ink">
             Your practice deserves better than{" "}
             <span className="italic text-teal" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
-              spreadsheets,
+              notepads,
             </span>{" "}
-            PDFs, and back-and-forth emails.
+            spreadsheets, and back and forth emails.
           </motion.h2>
         </div>
 
@@ -36,16 +36,16 @@ export default function Problem() {
             variants={fadeUp}
             className="lede text-ink-2/85 text-[1.1rem] lg:text-[1.18rem] leading-[1.65]"
           >
-            Many firms still rely on scattered notes, paper forms, email chains, and manual
-            follow-up to gather client information. The result is delays, missed details,
-            inconsistent experiences, and unnecessary administrative work.
+            Your firm does not have an organized way to create and maintain your clients'
+            estate plans throughout the years.
           </motion.p>
           <motion.p
             variants={fadeUp}
             className="lede mt-5 text-ink-2/85 text-[1.1rem] lg:text-[1.18rem] leading-[1.65]"
           >
-            Legacy Louisiana modernises the process — without modernising away the things
-            that make estate work feel personal.
+            We provide the valuable resources to assist with the data entry, data analysis,
+            and data output to create the client friendly visual presentations your clients
+            want and need, all native to Louisiana's unique legal environment.
           </motion.p>
 
           <motion.div

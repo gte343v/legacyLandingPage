@@ -41,7 +41,8 @@ export default function Footer() {
                   admin@legacylouisiana.com
                 </a>
               </li>
-              <li className="text-cream/55">Baton Rouge, LA</li>
+              <li className="text-cream/55">212 Park Place</li>
+              <li className="text-cream/55">Covington, LA 70433</li>
               <li>
                 <a className="link-underline hover:text-cream" href="https://www.legacylouisiana.com/account/login">
                   Account login
@@ -53,7 +54,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-cream/12 pt-6 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-cream/45 lg:flex-row lg:items-center">
           <span>© 2026 Legacy Louisiana, LLC</span>
-          <span>Composed in Baton Rouge · Set in Fraunces & Geist</span>
+          <span>Composed in Covington, Louisiana · Set in Fraunces & Geist</span>
           <span>v 1.0 · MMXXVI</span>
         </div>
       </div>

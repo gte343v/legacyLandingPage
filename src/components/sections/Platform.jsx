@@ -5,32 +5,32 @@ const FEATURES = [
   {
     n: "01",
     title: "Guided client intake",
-    body: "Clients complete secure online questionnaires at their convenience — with the warmth and clarity of a well-written letter.",
+    body: "Clients complete secure online questionnaires at their convenience, helping streamline the estate planning process for both attorney and client.",
   },
   {
     n: "02",
     title: "Attorney dashboard",
-    body: "Track invitations, progress, completed files, and client activity from a single, calmly composed workspace.",
+    body: "Track invitations, progress, completed files, and client activity from a single, neatly composed workspace.",
   },
   {
     n: "03",
     title: "Secure information storage",
-    body: "Keep client planning information organised, accessible, and effortless to maintain across matters.",
+    body: "Keep client planning information organized, accessible, and effortless to maintain across matters.",
   },
   {
     n: "04",
     title: "Report generation",
-    body: "Produce polished summaries and planning outputs in minutes — formatted as documents, not databases.",
+    body: "Produce polished summaries and planning outputs in minutes, formatted as clean, client ready documents.",
   },
   {
     n: "05",
     title: "Better client experience",
-    body: "Give every client the modern, professional onboarding experience that reflects the gravity of the work.",
+    body: "Give every client a modern, professional onboarding experience they will remember.",
   },
   {
     n: "06",
     title: "Scalable growth",
-    body: "Serve more families without increasing administrative burden. Compose practice, not paperwork.",
+    body: "Serve more families without increasing administrative burden.",
   },
 ];
 
@@ -52,15 +52,15 @@ export default function Platform() {
           <motion.h2 variants={fadeUp} className="display-lg mt-6 text-ink max-w-[16ch]">
             Everything you need to run a{" "}
             <span className="italic text-teal" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
-              quieter, more efficient
+              modern, more efficient
             </span>{" "}
             planning practice.
           </motion.h2>
         </div>
         <motion.div variants={fadeUp} className="lg:col-span-4 lg:col-start-9">
           <p className="lede text-ink-2/85">
-            A single workspace for secure intake, client progress, planning data, report
-            generation, and ongoing matter organisation.
+            A centralized platform for secure intake, planning, report creation, and ongoing
+            client management.
           </p>
         </motion.div>
       </motion.div>

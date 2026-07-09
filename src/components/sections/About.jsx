@@ -4,7 +4,7 @@ import { fadeUp, stagger, VIEWPORT } from "../../lib/motion";
 const POINTS = [
   { t: "Developed alongside Louisiana legal professionals", n: "01" },
   { t: "Focused on practical estate planning workflows", n: "02" },
-  { t: "Designed for small and mid-size firms", n: "03" },
+  { t: "Designed for small and midsize firms", n: "03" },
   { t: "Built for trust, efficiency, and better service", n: "04" },
 ];
 
@@ -28,12 +28,11 @@ export default function About() {
             <span className="italic text-teal" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
               with
             </span>{" "}
-            attorneys — around real workflow challenges.
+            attorneys, around real workflow challenges.
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-ink-2/85">
-            Legacy Louisiana was developed alongside practicing attorneys to solve the
-            specific friction points of modern estate planning — not by speculating about
-            them.
+            Legacy Louisiana was developed alongside practicing attorneys to solve the real
+            friction points of modern estate planning.
           </motion.p>
         </div>
 
@@ -50,7 +49,7 @@ export default function About() {
               >
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-teal">
-                    Tenet {p.n}
+                    No. {p.n}
                   </span>
                   <span
                     aria-hidden

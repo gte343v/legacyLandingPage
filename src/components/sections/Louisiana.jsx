@@ -2,10 +2,18 @@ import { motion } from "framer-motion";
 import { fadeUp, stagger, VIEWPORT } from "../../lib/motion";
 
 const WORKFLOWS = [
-  { t: "Wills & trust planning", d: "Workflows tuned for Louisiana's civil-law tradition." },
-  { t: "Succession matters", d: "Organise heirs, assets, and procedures cleanly." },
-  { t: "Family information", d: "Collect once. Reuse across every matter." },
-  { t: "Ongoing plan maintenance", d: "Keep plans current as families and assets change." },
+  {
+    t: "Will & trust planning",
+    d: "Includes the information needed for your clients to prepare the documents they need to have peace of mind.",
+  },
+  {
+    t: "Succession (probate)",
+    d: "After clients lose a loved one, make it as easy as possible for them to get the data needed for an efficient succession process.",
+  },
+  {
+    t: "Power of attorneys",
+    d: "Quickly and easily provide a valuable service to your clients who have children moving away.",
+  },
 ];
 
 export default function Louisiana() {
@@ -31,65 +39,83 @@ export default function Louisiana() {
             planning needs.
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-ink-2/85">
-            Built with Louisiana attorneys in mind — including workflows relevant to wills,
-            trusts, succession matters, family information collection, asset organisation,
-            and ongoing plan maintenance.
+            Built with Louisiana attorneys in mind, including workflows for wills, trusts,
+            succession matters, family information, asset organization, and ongoing plan
+            maintenance.
           </motion.p>
 
-          <motion.div
+          {/* Image is integrated into the section rather than presented as a
+              clickable thumbnail: no hard frame, edges feather into the page. */}
+          <motion.figure
             variants={fadeUp}
-            className="mt-10 relative aspect-[5/4] w-full max-w-md overflow-hidden rounded-2xl border border-ink/10"
+            className="mt-12 relative aspect-[5/4] w-full max-w-md"
           >
             <img
               src="/assets/legacy-family-hero.png"
               alt="A Louisiana family at home"
               className="absolute inset-0 h-full w-full object-cover"
-              style={{ filter: "saturate(0.9) contrast(1.04) brightness(0.95)" }}
+              style={{
+                filter: "saturate(0.86) contrast(1.02) brightness(0.98)",
+                WebkitMaskImage:
+                  "radial-gradient(120% 120% at 30% 30%, #000 45%, transparent 92%)",
+                maskImage:
+                  "radial-gradient(120% 120% at 30% 30%, #000 45%, transparent 92%)",
+              }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/15 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-6">
+            {/* soft wash so the image reads as part of the page background */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(247,244,239,0) 40%, rgba(247,244,239,0.55) 100%)",
+              }}
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 p-2">
               <p
-                className="font-display text-cream text-2xl leading-tight"
+                className="font-display text-ink text-2xl leading-tight"
                 style={{ fontVariationSettings: "'opsz' 48, 'SOFT' 70" }}
               >
                 A practice built around the families you serve.
               </p>
-              <p className="mt-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-cream/70">
+              <p className="mt-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-ink-2/60">
                 Pointe Coupee Parish, LA
               </p>
-            </div>
-          </motion.div>
+            </figcaption>
+          </motion.figure>
         </div>
 
         <motion.div
-          className="lg:col-span-6 lg:col-start-7"
-          variants={stagger(0.1, 0.2)}
+          className="lg:col-span-6 lg:col-start-7 space-y-6"
+          variants={stagger(0.12, 0.2)}
         >
-          <div className="overflow-hidden rounded-3xl border border-ink/10 bg-cream">
-            {WORKFLOWS.map((w, i) => (
-              <motion.div
-                key={w.t}
-                variants={fadeUp}
-                className="group relative grid grid-cols-[auto,1fr,auto] items-center gap-8 border-b border-ink/10 px-7 py-7 lg:px-9 lg:py-9 last:border-b-0 transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-paper"
+          {WORKFLOWS.map((w, i) => (
+            <motion.article
+              key={w.t}
+              variants={fadeUp}
+              className="group relative overflow-hidden rounded-3xl border border-ink/10 bg-cream p-8 lg:p-10 transition-[transform,border-color] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-teal/40"
+            >
+              {/* oversized serif index, varies the rhythm from card to card */}
+              <span
+                aria-hidden
+                className="pointer-events-none absolute -right-2 -top-6 select-none font-display italic text-ink/[0.05] leading-none"
+                style={{ fontSize: "9rem", fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}
               >
-                <div className="font-mono text-[0.72rem] uppercase tracking-[0.22em] text-teal">
+                {i + 1}
+              </span>
+              <div className="relative flex items-center gap-3">
+                <span className="font-mono text-[0.72rem] uppercase tracking-[0.22em] text-teal">
                   {`No. 0${i + 1}`}
-                </div>
-                <div>
-                  <h3 className="display-md text-ink text-[1.55rem] lg:text-[1.95rem] leading-[1.08]">
-                    {w.t}
-                  </h3>
-                  <p className="mt-2 text-ink-2/75 leading-[1.6] text-[0.97rem]">{w.d}</p>
-                </div>
-                <span
-                  aria-hidden
-                  className="hidden sm:inline-grid h-10 w-10 place-items-center rounded-full border border-ink/15 text-ink/55 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:border-teal group-hover:text-teal group-hover:rotate-[-12deg]"
-                >
-                  ↗
                 </span>
-              </motion.div>
-            ))}
-          </div>
+                <span className="h-px flex-1 bg-ink/10" />
+              </div>
+              <h3 className="relative mt-5 display-md text-ink text-[1.6rem] lg:text-[2.05rem] leading-[1.05]">
+                {w.t}
+              </h3>
+              <p className="relative mt-3 max-w-[52ch] text-ink-2/75 leading-[1.65] text-[1.02rem]">
+                {w.d}
+              </p>
+            </motion.article>
+          ))}
         </motion.div>
       </motion.div>
     </div>

@@ -1,22 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeUp, stagger, VIEWPORT, EASE } from "../../lib/motion";
 
-const STEPS = [
-  {
-    n: "I",
-    title: "Reduce manual follow-up",
-    body: "Automated reminders, intake nudges, and progress tracking eliminate the administrative drag.",
-  },
-  {
-    n: "II",
-    title: "Standardise intake & communication",
-    body: "A consistent, polished experience across every matter — client and attorney alike.",
-  },
-  {
-    n: "III",
-    title: "Deliver a modern experience",
-    body: "Make the firm's care for craft visible in every interaction your clients have with you.",
-  },
+const BENEFITS = [
+  { n: "I", title: "Organize and maintain a vast number of data points" },
+  { n: "II", title: "Reduce your practice risk" },
+  { n: "III", title: "Increase the chances of success for your clients' estate plans" },
+  { n: "IV", title: "Earn with more consistency" },
 ];
 
 export default function Attorneys() {
@@ -41,28 +30,24 @@ export default function Attorneys() {
             </span>{" "}
             service. Stronger growth.
           </motion.h2>
-          <motion.p variants={fadeUp} className="lede mt-7 text-ink-2/85 max-w-[44ch]">
-            Legacy Louisiana helps firms reduce manual work, improve responsiveness, and
-            create a smoother experience clients remember — and refer.
+          <motion.p variants={fadeUp} className="lede mt-7 text-ink-2/85 max-w-[46ch]">
+            Legacy Louisiana helps to reduce manual work, improve responsiveness, and create a
+            smoother experience clients appreciate, and then refer new clients to you.
           </motion.p>
-          <motion.div
-            variants={fadeUp}
-            className="mt-9 inline-flex items-center gap-3 rounded-full border border-ink/15 bg-paper-2 px-5 py-2.5"
-          >
-            <span className="grid h-2 w-2 place-items-center rounded-full bg-teal" />
-            <span className="font-mono text-[0.72rem] uppercase tracking-[0.2em] text-ink-2">
-              Spend more time practicing law
-            </span>
-          </motion.div>
         </div>
 
         <motion.ol
           className="lg:col-span-6 lg:col-start-7 space-y-4"
           variants={stagger(0.13, 0.2)}
         >
-          {STEPS.map((s, i) => (
+          <motion.li variants={fadeUp} className="hidden lg:block">
+            <p className="font-mono text-[0.72rem] uppercase tracking-[0.22em] text-teal">
+              Key benefits
+            </p>
+          </motion.li>
+          {BENEFITS.map((s) => (
             <motion.li
-              key={s.title}
+              key={s.n}
               variants={{
                 hidden: { opacity: 0, y: 28 },
                 show: {
@@ -71,7 +56,7 @@ export default function Attorneys() {
                   transition: { duration: 1.35, ease: EASE },
                 },
               }}
-              className="group relative grid grid-cols-[auto,1fr] items-start gap-6 rounded-2xl border border-ink/10 bg-cream p-7 lg:p-9 transition-[transform,border-color,background-color] duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-teal/40 hover:bg-paper hover:-translate-y-1"
+              className="group relative grid grid-cols-[auto,1fr] items-center gap-6 rounded-2xl border border-ink/10 bg-cream p-7 lg:p-8 transition-[transform,border-color,background-color] duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-teal/40 hover:bg-paper hover:-translate-y-1"
             >
               <div
                 className="grid h-14 w-14 place-items-center rounded-xl border border-ink/15 bg-paper font-display text-2xl text-teal"
@@ -79,17 +64,9 @@ export default function Attorneys() {
               >
                 {s.n}
               </div>
-              <div>
-                <h3 className="display-md text-ink text-[1.55rem] lg:text-[1.85rem] leading-[1.1]">
-                  {s.title}
-                </h3>
-                <p className="mt-3 text-ink-2/80 leading-[1.65] text-[0.97rem]">{s.body}</p>
-              </div>
-              <div className="absolute right-7 top-7 hidden text-teal lg:block">
-                <span className="font-mono text-[0.72rem] uppercase tracking-[0.18em] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-              </div>
+              <h3 className="display-md text-ink text-[1.35rem] lg:text-[1.6rem] leading-[1.15]">
+                {s.title}
+              </h3>
             </motion.li>
           ))}
         </motion.ol>

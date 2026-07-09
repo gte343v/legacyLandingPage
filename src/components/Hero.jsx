@@ -79,9 +79,9 @@ export default function Hero() {
               variants={reveal} initial="hidden" animate="show" custom={2}
               className="lede mt-6 text-cream/75 max-w-[58ch]"
             >
-              Streamline client intake, organise sensitive information securely, generate
-              polished planning reports, and deliver a better client experience — all in
-              one calm, considered platform.
+              Streamline client intake, organize sensitive information securely, generate
+              polished planning reports, and deliver a better client experience. One platform,
+              built for Louisiana. Welcome to the next generation of generational planning.
             </motion.p>
 
             <motion.div
@@ -112,10 +112,10 @@ export default function Hero() {
         >
           <div className="flex flex-wrap items-center justify-between gap-4 border-t border-cream/15 pt-4">
             <span className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-cream/55">
-              Scroll · the documents follow
+              Scroll
             </span>
             <span className="hidden sm:block font-mono text-[0.7rem] uppercase tracking-[0.22em] text-cream/55">
-              Baton Rouge · Lafayette · New Orleans
+              A statewide platform · Louisiana
             </span>
             <span aria-hidden className="grid h-8 w-8 place-items-center rounded-full border border-cream/30 text-cream/70">
               <svg width="12" height="12" viewBox="0 0 14 14" fill="none">

@@ -20,7 +20,7 @@
 
   /* Typography */
   --font-display: "Fraunces", "Iowan Old Style", Georgia, ui-serif, serif;
-  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", monospace;
 
   /* Easing */

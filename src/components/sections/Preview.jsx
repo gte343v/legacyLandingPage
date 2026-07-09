@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { fadeUp, scaleFade, stagger, VIEWPORT, EASE } from "../../lib/motion";
 
 const CHIPS = [
-  { k: "Intake", v: "Conversational, paced" },
-  { k: "Portal", v: "Quiet, secure" },
-  { k: "Reports", v: "Document-grade" },
-  { k: "Storage", v: "Always organised" },
+  { k: "Intake", v: "Engaging and thorough" },
+  { k: "Portal", v: "Reliable, secure" },
+  { k: "Reports", v: "Ready for you, or edit" },
+  { k: "Storage", v: "Organized data" },
 ];
 
 export default function Preview() {
@@ -24,16 +24,16 @@ export default function Preview() {
             Chapter III · The experience
           </motion.p>
           <motion.h2 variants={fadeUp} className="display-lg mt-6 text-cream">
-            Calm, premium software for{" "}
+            Secure, premium software for{" "}
             <span className="italic text-teal-light" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
-              high-trust
+              high trust
             </span>{" "}
             client work.
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-cream/70">
-            Estate planning is intimate work — the software should feel that way. Every
-            surface in Legacy Louisiana is designed to be read like a document, not
-            navigated like an application.
+            Estate planning is personal work, and the software should feel that way. Every
+            screen in Legacy Louisiana is clear and easy to follow, for you and for your
+            clients.
           </motion.p>
           <motion.div variants={stagger(0.08, 0.2)} className="mt-8 grid grid-cols-2 gap-3">
             {CHIPS.map((c) => (

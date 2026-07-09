@@ -4,6 +4,7 @@ import { EASE } from "./lib/motion";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Problem from "./components/sections/Problem";
+import Flow from "./components/sections/Flow";
 import Platform from "./components/sections/Platform";
 import Preview from "./components/sections/Preview";
 import Attorneys from "./components/sections/Attorneys";
@@ -33,6 +34,12 @@ export default function App() {
       </div>
 
       {/* Normal sections from here */}
+      <section
+        className="relative"
+        style={{ background: "linear-gradient(180deg, #f7f4ef 0%, #efe9dd 100%)" }}
+      >
+        <Flow />
+      </section>
       <section className="relative bg-cream"><Platform /></section>
       <section className="relative bg-ink text-cream"><Preview /></section>
       <section className="relative bg-paper-2"><Attorneys /></section>
