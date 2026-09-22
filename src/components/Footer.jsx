@@ -51,7 +51,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-cream/12 pt-6 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-cream/45 lg:flex-row lg:items-center">
+        <p className="mt-12 max-w-4xl text-[0.78rem] leading-[1.65] text-cream/40">
+          Legacy Louisiana, LLC is an estate planning management and technology platform for
+          attorneys. Legacy Louisiana is not a law firm and does not provide legal services.
+          Attorneys using the platform remain solely responsible for the legal services they
+          provide to their clients.
+        </p>
+
+        <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-cream/12 pt-6 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-cream/45 lg:flex-row lg:items-center">
           <span>© 2026 Legacy Louisiana, LLC</span>
           <span>Composed in Covington, Louisiana</span>
           <span>v 1.0 · MMXXVI</span>

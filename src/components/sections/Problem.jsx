@@ -33,6 +33,14 @@ export default function Problem() {
             fragmented data and unorganized planning histories. Move your firm into a unified
             platform that handles the heavy lifting:
           </motion.p>
+          <motion.p
+            variants={fadeUp}
+            className="mt-5 text-ink-2/80 text-[1.02rem] lg:text-[1.08rem] leading-[1.65]"
+          >
+            Because estate planning doesn&apos;t end when documents are signed, Legacy Louisiana
+            helps firms maintain an organized client record as families, assets, and planning
+            needs evolve.
+          </motion.p>
           <motion.div
             variants={fadeUp}
             className="mt-6 space-y-4 text-ink-2/85 text-[1.02rem] lg:text-[1.08rem] leading-[1.65]"
