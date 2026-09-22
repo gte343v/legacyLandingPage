@@ -46,7 +46,7 @@ export default function Flow() {
     <div
       id="flow"
       ref={wrapRef}
-      className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-14 py-28 lg:py-40"
+      className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-14 pt-16 pb-28 lg:pt-20 lg:pb-40"
     >
       {/* Heading block */}
       <motion.div

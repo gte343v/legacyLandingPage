@@ -1,15 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeUp, stagger, VIEWPORT } from "../../lib/motion";
 
-const STATS = [
-  { n: "47%", l: "Avg. intake time reclaimed" },
-  { n: "1×", l: "Single source of truth" },
-  { n: "0", l: "Lost client emails" },
-];
-
 export default function Problem() {
   return (
-    <div id="how" className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-14 py-28 lg:py-40">
+    <div id="how" className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-14 pt-28 pb-16 lg:pt-40 lg:pb-20">
       <motion.div
         className="grid gap-16 lg:grid-cols-12"
         variants={stagger(0.1)}
@@ -48,24 +42,6 @@ export default function Problem() {
             <p><strong className="text-ink">Client-First Output:</strong> Intuitive visual presentations that clients easily understand.</p>
           </motion.div>
 
-          <motion.div
-            variants={stagger(0.1, 0.15)}
-            className="mt-10 grid grid-cols-3 gap-px overflow-hidden rounded-2xl border border-ink/10 bg-ink/10"
-          >
-            {STATS.map((s) => (
-              <motion.div key={s.l} variants={fadeUp} className="bg-paper px-5 py-7">
-                <div
-                  className="font-display text-3xl lg:text-4xl text-ink"
-                  style={{ fontVariationSettings: "'opsz' 96" }}
-                >
-                  {s.n}
-                </div>
-                <div className="mt-2 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-muted">
-                  {s.l}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </motion.div>
     </div>
