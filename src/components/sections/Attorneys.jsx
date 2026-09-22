@@ -4,7 +4,7 @@ import { fadeUp, stagger, VIEWPORT, EASE } from "../../lib/motion";
 
 export default function Attorneys() {
   return (
-    <div className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-14 py-28 lg:py-40">
+    <div id="attorneys" className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-14 py-28 lg:py-40">
       <motion.div
         className="grid gap-14 lg:grid-cols-12 lg:gap-16"
         variants={stagger(0.1)}
