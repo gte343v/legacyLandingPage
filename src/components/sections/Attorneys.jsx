@@ -37,13 +37,48 @@ export default function Attorneys() {
           </motion.h2>
         </div>
 
-        <div className="lg:col-span-6 lg:pt-24">
-          <motion.p variants={fadeUp} className="lede text-muted">
-            Your reputation is your firm's most valuable asset. Legacy Louisiana replaces
-            manual friction and delays with a sleek, responsive digital platform. By
-            delivering the modern, high-end experience today’s clients demand, you
-            cultivate lifelong advocates who confidently refer new business to your firm.
-          </motion.p>
+        <div className="lg:col-span-6 lg:pt-16">
+          <motion.div variants={fadeUp} className="border-t border-ink/15">
+            {[
+              {
+                no: "01",
+                title: "Better client experience",
+                copy: "A modern, responsive planning experience.",
+              },
+              {
+                no: "02",
+                title: "Stronger relationships",
+                copy: "Stay connected as client needs evolve.",
+              },
+              {
+                no: "03",
+                title: "More referrals & firm growth",
+                copy: "Turn great experiences into lasting advocacy.",
+              },
+            ].map((item, index) => (
+              <div
+                key={item.no}
+                className="grid grid-cols-[2.5rem_1fr] gap-4 border-b border-ink/15 py-5 sm:grid-cols-[3rem_1fr]"
+              >
+                <span className="font-mono text-[0.68rem] tracking-[0.18em] text-teal/70">
+                  {item.no}
+                </span>
+                <div>
+                  <h3
+                    className={`font-display text-[1.35rem] leading-tight ${
+                      index === 2 ? "italic text-teal" : "text-ink"
+                    }`}
+                    style={index === 2 ? { fontVariationSettings: "'opsz' 144, 'SOFT' 100" } : undefined}
+                  >
+                    {item.title}
+                  </h3>
+                  <p className="mt-1.5 text-[0.94rem] leading-[1.55] text-muted">
+                    {item.copy}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </motion.div>
     </div>
