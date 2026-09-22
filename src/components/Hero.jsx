@@ -80,9 +80,9 @@ export default function Hero() {
               variants={reveal} initial="hidden" animate="show" custom={2}
               className="lede mt-6 text-cream/75 max-w-[64ch]"
             >
-              Transform your practice with automated client intake, secure data<br className="hidden sm:block" />
-              management, and report generation. Empower your firm to deliver a<br className="hidden sm:block" />
-              superior client experience. One seamless platform, engineered<br className="hidden sm:block" />
+              Transform your practice with automated client intake, secure data{" "}<br className="hidden sm:block" />
+              management, and report generation. Empower your firm to deliver a{" "}<br className="hidden sm:block" />
+              superior client experience. One seamless platform, engineered{" "}<br className="hidden sm:block" />
               specifically for Louisiana's unique legal landscape.
             </motion.p>
 
