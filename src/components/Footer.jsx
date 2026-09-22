@@ -9,10 +9,6 @@ export default function Footer() {
               alt="Legacy Louisiana, LLC"
               className="block h-14 w-auto rounded-sm"
             />
-            <p className="mt-6 max-w-md text-[0.92rem] leading-[1.65] text-cream/60">
-              Legacy Louisiana supports legal service workflows. Attorney review and
-              independent legal judgement remain essential for client matters.
-            </p>
           </div>
 
           <div className="lg:col-span-2">
