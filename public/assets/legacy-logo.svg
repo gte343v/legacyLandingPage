@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 144" role="img" aria-labelledby="title">
+  <title id="title">Legacy Louisiana, LLC</title>
+  <rect width="430" height="144" fill="#2a2727"/>
+  <g fill="none" stroke="#ffffff" stroke-width="7.2" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M57.5 39.5A45.5 45.5 0 1 0 103 85"/>
+    <path d="M57.5 18.5V85h77"/>
+    <path d="M72.5 10V68"/>
+    <path d="M97 68h31"/>
+    <path d="M104 84h35"/>
+  </g>
+  <path d="M64.5 50.5A34.5 34.5 0 0 1 99 85H64.5Z" fill="#2b7880" stroke="#ffffff" stroke-width="4.2" stroke-linejoin="miter"/>
+  <text x="159" y="82" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="36" letter-spacing="9.5">LEGACY</text>
+  <text x="161" y="114" fill="#2b7880" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" letter-spacing="6.2">LOUISIANA,LLC</text>
+</svg>
