@@ -55,8 +55,8 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-cream/12 pt-6 font-mono text-[0.7rem] uppercase tracking-[0.2em] text-cream/45 lg:flex-row lg:items-center">
           <span>© 2026 Legacy Louisiana, LLC</span>
-          <span>Composed in Covington, Louisiana</span>
-          <span>v 1.0 · MMXXVI</span>
+          <span>Louisiana estate planning technology</span>
+          <span>Covington, Louisiana</span>
         </div>
       </div>
     </footer>
