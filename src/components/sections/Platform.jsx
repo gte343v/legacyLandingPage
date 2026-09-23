@@ -58,7 +58,7 @@ export default function Platform() {
             <span className="italic text-teal" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
               efficient
             </span>{" "}
-            planning practice.
+            planning practice
           </motion.h2>
         </div>
         <motion.div
