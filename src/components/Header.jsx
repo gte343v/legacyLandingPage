@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const NAV = [
   { label: "Platform", href: "#platform" },
   { label: "For Attorneys", href: "#attorneys" },
-  { label: "Louisiana", href: "#louisiana" },
+  { label: "Why Legacy", href: "#louisiana" },
   { label: "About", href: "#about" },
 ];
 
