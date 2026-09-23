@@ -24,7 +24,7 @@ export default function Problem() {
           </motion.h2>
         </div>
 
-        <div className="lg:col-span-6 lg:col-start-7 lg:pt-14">
+        <div className="lg:col-span-7 lg:col-start-6 lg:pt-14">
           <motion.p
             variants={fadeUp}
             className="lede text-ink-2/85 text-[1.1rem] lg:text-[1.18rem] leading-[1.65]"
