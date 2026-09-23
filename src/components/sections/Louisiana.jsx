@@ -47,18 +47,18 @@ export default function Louisiana() {
               clickable thumbnail: no hard frame, edges feather into the page. */}
           <motion.figure
             variants={fadeUp}
-            className="mt-12 relative aspect-[5/4] w-full max-w-md"
+            className="mt-12 relative aspect-[5/4] w-full max-w-lg"
           >
             <img
-              src="/assets/legacy-family-hero.png"
-              alt="A Louisiana family at home"
-              className="absolute inset-0 h-full w-full object-cover"
+              src="/assets/louisiana-family-porch.jpg"
+              alt="A multigenerational family spending time together on a porch"
+              className="absolute inset-0 h-full w-full object-cover object-[center_68%]"
               style={{
                 filter: "saturate(0.86) contrast(1.02) brightness(0.98)",
                 WebkitMaskImage:
-                  "radial-gradient(120% 120% at 30% 30%, #000 45%, transparent 92%)",
+                  "radial-gradient(ellipse at center, #000 58%, rgba(0,0,0,0.96) 68%, rgba(0,0,0,0.72) 78%, rgba(0,0,0,0.35) 88%, transparent 100%)",
                 maskImage:
-                  "radial-gradient(120% 120% at 30% 30%, #000 45%, transparent 92%)",
+                  "radial-gradient(ellipse at center, #000 58%, rgba(0,0,0,0.96) 68%, rgba(0,0,0,0.72) 78%, rgba(0,0,0,0.35) 88%, transparent 100%)",
               }}
             />
             {/* soft wash so the image reads as part of the page background */}
@@ -66,7 +66,7 @@ export default function Louisiana() {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(247,244,239,0) 40%, rgba(247,244,239,0.55) 100%)",
+                  "linear-gradient(180deg, rgba(247,244,239,0) 72%, rgba(247,244,239,0.12) 84%, rgba(247,244,239,0.28) 100%)",
               }}
             />
           </motion.figure>
