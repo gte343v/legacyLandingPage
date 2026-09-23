@@ -55,7 +55,7 @@ export default function Attorneys() {
                 title: "More referrals & firm growth",
                 copy: "Turn great experiences into lasting advocacy.",
               },
-            ].map((item, index) => (
+            ].map((item) => (
               <div
                 key={item.no}
                 className="grid grid-cols-[2.5rem_1fr] gap-4 border-b border-ink/15 py-5 sm:grid-cols-[3rem_1fr]"
@@ -64,12 +64,7 @@ export default function Attorneys() {
                   {item.no}
                 </span>
                 <div>
-                  <h3
-                    className={`font-display text-[1.35rem] leading-tight ${
-                      index === 2 ? "italic text-teal" : "text-ink"
-                    }`}
-                    style={index === 2 ? { fontVariationSettings: "'opsz' 144, 'SOFT' 100" } : undefined}
-                  >
+                  <h3 className="font-display text-[1.35rem] leading-tight text-ink">
                     {item.title}
                   </h3>
                   <p className="mt-1.5 text-[0.94rem] leading-[1.55] text-muted">
