@@ -91,7 +91,7 @@ export default function Platform() {
                 className="inline-block h-px w-12 bg-ink/15 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-20 group-hover:bg-teal"
               />
             </div>
-            <h3 className="display-md text-ink leading-[1.05] max-w-[14ch]">{f.title}</h3>
+            <h3 className="font-display text-[1.7rem] lg:text-[1.8rem] text-ink leading-[1.08] max-w-[14ch]">{f.title}</h3>
             <p className="text-ink-2/80 leading-[1.65] text-[0.97rem]">{f.body}</p>
           </motion.article>
         ))}
