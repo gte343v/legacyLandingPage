@@ -36,7 +36,7 @@ export default function Louisiana() {
             <span className="italic text-teal" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
               Louisiana
             </span>{" "}
-            planning needs.
+            planning needs
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-ink-2/85">
             Developed with Louisiana attorneys to address the practice challenges they

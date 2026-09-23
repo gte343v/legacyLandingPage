@@ -33,7 +33,6 @@ export default function Attorneys() {
             >
               firm growth
             </span>
-            .
           </motion.h2>
         </div>
 
