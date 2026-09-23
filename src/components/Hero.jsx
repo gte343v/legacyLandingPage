@@ -117,7 +117,7 @@ export default function Hero() {
               Scroll
             </span>
             <span className="hidden sm:block font-mono text-[0.7rem] uppercase tracking-[0.22em] text-cream/55">
-              A statewide platform · Louisiana
+              Purpose-built for Louisiana attorneys
             </span>
             <span aria-hidden className="grid h-8 w-8 place-items-center rounded-full border border-cream/30 text-cream/70">
               <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
