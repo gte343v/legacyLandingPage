@@ -15,7 +15,7 @@ export default function CTA() {
           <motion.h2 variants={fadeUp} className="display-xl text-cream">
             Modernize your{" "}
             <span className="italic text-teal-light" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
-              practice.
+              practice
             </span>
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-cream/70 max-w-[52ch]">
