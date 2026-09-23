@@ -28,7 +28,7 @@ export default function Preview() {
             <span className="italic text-teal-light" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
               high trust
             </span>{" "}
-            client work.
+            client work
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-cream/70">
             Estate planning is personal work. Every screen in Legacy Louisiana is designed
