@@ -61,8 +61,11 @@ export default function Platform() {
             planning practice.
           </motion.h2>
         </div>
-        <motion.div variants={fadeUp} className="lg:col-span-4 lg:col-start-9 lg:pt-[7.6rem]">
-          <p className="lede text-ink-2/85">
+        <motion.div
+          variants={fadeUp}
+          className="lg:col-span-4 lg:col-start-9 lg:self-end lg:pb-2"
+        >
+          <p className="max-w-[31ch] border-l border-teal/60 pl-5 text-[1rem] leading-[1.65] text-ink-2/85">
             A centralized platform for secure intake, planning, report creation, and ongoing
             client management.
           </p>
