@@ -73,7 +73,7 @@ export default function Hero() {
                 Louisiana
               </span>
               <span className="block text-[0.88em]">estate planning</span>
-              <span className="block text-[0.88em]">is here.</span>
+              <span className="block text-[0.88em]">is here</span>
             </motion.h1>
 
             <motion.p
