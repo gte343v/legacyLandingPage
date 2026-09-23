@@ -37,9 +37,9 @@ export default function Problem() {
             variants={fadeUp}
             className="mt-8 border-t border-ink/10 text-ink-2/85 text-[1.02rem] lg:text-[1.08rem] leading-[1.65]"
           >
-            <p className="border-b border-ink/10 py-4"><strong className="text-ink">Data Intake:</strong> Seamless entry that helps keep client files current over the years.</p>
-            <p className="border-b border-ink/10 py-4"><strong className="text-ink">Instant Analysis:</strong> Tools built specifically for Louisiana's distinct legal landscape.</p>
-            <p className="py-4"><strong className="text-ink">Client-First Output:</strong> Intuitive visual presentations that clients easily understand.</p>
+            <p className="border-b border-ink/10 py-4"><strong className="text-teal">Data Intake:</strong> Seamless entry that helps keep client files current over the years.</p>
+            <p className="border-b border-ink/10 py-4"><strong className="text-teal">Instant Analysis:</strong> Tools built specifically for Louisiana's distinct legal landscape.</p>
+            <p className="py-4"><strong className="text-teal">Client-First Output:</strong> Intuitive visual presentations that clients easily understand.</p>
           </motion.div>
 
         </div>
