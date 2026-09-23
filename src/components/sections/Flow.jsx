@@ -66,7 +66,7 @@ export default function Flow() {
             className="italic text-teal"
             style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}
           >
-            flow.
+            flow
           </span>
         </motion.h2>
         <motion.p variants={fadeUp} className="lede mt-6 text-ink-2/85 max-w-[54ch]">

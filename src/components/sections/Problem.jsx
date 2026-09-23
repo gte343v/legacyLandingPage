@@ -20,7 +20,7 @@ export default function Problem() {
             <span className="italic text-teal" style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}>
               Modernize
             </span>{" "}
-            your workflow from intake to output.
+            your workflow from intake to output
           </motion.h2>
         </div>
 
