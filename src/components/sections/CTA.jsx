@@ -56,8 +56,8 @@ export default function CTA() {
             </p>
             <div className="mt-6 grid gap-3 font-mono text-[0.78rem] uppercase tracking-[0.18em] text-cream/55">
               <div className="flex justify-between border-b border-cream/15 pb-3">
-                <span>Covington, LA</span>
-                <span className="text-cream/85">HQ</span>
+                <span>Office</span>
+                <span className="text-cream/85">Covington, LA</span>
               </div>
               <div className="flex justify-between border-b border-cream/15 pb-3">
                 <span>Hours</span>
