@@ -29,25 +29,17 @@ export default function Problem() {
             variants={fadeUp}
             className="lede text-ink-2/85 text-[1.1rem] lg:text-[1.18rem] leading-[1.65]"
           >
-            This is the lifecycle management your estate practice is missing. Say goodbye to
-            fragmented data and unorganized planning histories. Move your firm into a unified
-            platform that handles the heavy lifting:
-          </motion.p>
-          <motion.p
-            variants={fadeUp}
-            className="mt-5 text-ink-2/80 text-[1.02rem] lg:text-[1.08rem] leading-[1.65]"
-          >
-            Because estate planning doesn&apos;t end when documents are signed, Legacy Louisiana
-            helps firms maintain an organized client record as families, assets, and planning
-            needs evolve.
+            Estate planning doesn&apos;t end when documents are signed. Legacy Louisiana brings
+            fragmented data and planning histories into one platform, helping firms maintain an
+            organized client record as families, assets, and planning needs evolve.
           </motion.p>
           <motion.div
             variants={fadeUp}
-            className="mt-6 space-y-4 text-ink-2/85 text-[1.02rem] lg:text-[1.08rem] leading-[1.65]"
+            className="mt-8 border-t border-ink/10 text-ink-2/85 text-[1.02rem] lg:text-[1.08rem] leading-[1.65]"
           >
-            <p><strong className="text-ink">Data Intake:</strong> Seamless entry that can help keep client files current over the years.</p>
-            <p><strong className="text-ink">Instant Analysis:</strong> Tools built specifically for Louisiana's distinct legal landscape.</p>
-            <p><strong className="text-ink">Client-First Output:</strong> Intuitive visual presentations that clients easily understand.</p>
+            <p className="border-b border-ink/10 py-4"><strong className="text-ink">Data Intake:</strong> Seamless entry that helps keep client files current over the years.</p>
+            <p className="border-b border-ink/10 py-4"><strong className="text-ink">Instant Analysis:</strong> Tools built specifically for Louisiana's distinct legal landscape.</p>
+            <p className="py-4"><strong className="text-ink">Client-First Output:</strong> Intuitive visual presentations that clients easily understand.</p>
           </motion.div>
 
         </div>
