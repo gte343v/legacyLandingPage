@@ -29,7 +29,7 @@ export default function Louisiana() {
         <div className="lg:col-span-5">
           <motion.p variants={fadeUp} className="eyebrow flex items-center gap-3">
             <span className="inline-block h-px w-10 bg-teal/50" />
-            Louisiana
+            Purpose built
           </motion.p>
           <motion.h2 variants={fadeUp} className="display-lg mt-6 text-ink">
             Designed for{" "}
@@ -39,26 +39,26 @@ export default function Louisiana() {
             planning needs.
           </motion.h2>
           <motion.p variants={fadeUp} className="lede mt-7 text-ink-2/85">
-            Purpose built together with Louisiana attorneys to solve the practice challenges
-            you experience every day.
+            Developed with Louisiana attorneys to address the practice challenges they
+            encounter every day.
           </motion.p>
 
           {/* Image is integrated into the section rather than presented as a
               clickable thumbnail: no hard frame, edges feather into the page. */}
           <motion.figure
             variants={fadeUp}
-            className="mt-12 relative aspect-[5/4] w-full max-w-lg"
+            className="mt-12 relative aspect-[5/4] w-full max-w-md"
           >
             <img
-              src="/assets/louisiana-family-porch.jpg"
-              alt="A multigenerational family spending time together on a porch"
-              className="absolute inset-0 h-full w-full object-cover object-[center_68%]"
+              src="/assets/legacy-family-hero.png"
+              alt="A Louisiana family at home"
+              className="absolute inset-0 h-full w-full object-cover"
               style={{
                 filter: "saturate(0.86) contrast(1.02) brightness(0.98)",
                 WebkitMaskImage:
-                  "radial-gradient(ellipse at center, #000 58%, rgba(0,0,0,0.96) 68%, rgba(0,0,0,0.72) 78%, rgba(0,0,0,0.35) 88%, transparent 100%)",
+                  "radial-gradient(120% 120% at 30% 30%, #000 45%, transparent 92%)",
                 maskImage:
-                  "radial-gradient(ellipse at center, #000 58%, rgba(0,0,0,0.96) 68%, rgba(0,0,0,0.72) 78%, rgba(0,0,0,0.35) 88%, transparent 100%)",
+                  "radial-gradient(120% 120% at 30% 30%, #000 45%, transparent 92%)",
               }}
             />
             {/* soft wash so the image reads as part of the page background */}
@@ -66,7 +66,7 @@ export default function Louisiana() {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(247,244,239,0) 72%, rgba(247,244,239,0.12) 84%, rgba(247,244,239,0.28) 100%)",
+                  "linear-gradient(180deg, rgba(247,244,239,0) 40%, rgba(247,244,239,0.55) 100%)",
               }}
             />
           </motion.figure>
