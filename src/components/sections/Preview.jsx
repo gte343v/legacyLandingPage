@@ -121,9 +121,9 @@ export default function Preview() {
                     ["Assets logged", "23"],
                     ["Documents", "11"],
                   ].map(([k, v]) => (
-                    <div key={k} className="rounded-md border border-ink/8 bg-paper px-3 py-2.5">
-                      <div className="font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted">{k}</div>
-                      <div className="mt-0.5 font-display text-lg text-ink" style={{ fontVariationSettings: "'opsz' 48" }}>{v}</div>
+                    <div key={k} className="min-w-0 rounded-md border border-ink/8 bg-paper px-2 py-2.5 sm:px-3">
+                      <div className="whitespace-nowrap font-mono text-[0.48rem] sm:text-[0.6rem] uppercase tracking-[0.08em] sm:tracking-[0.16em] text-muted">{k}</div>
+                      <div className="mt-1 font-display text-lg leading-none text-ink" style={{ fontVariationSettings: "'opsz' 48" }}>{v}</div>
                     </div>
                   ))}
                 </div>
